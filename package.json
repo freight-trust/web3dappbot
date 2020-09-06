@@ -14,16 +14,24 @@
     "probot-app"
   ],
   "scripts": {
+    "web3": "bnc-notify",
+    "dev": "nodemon",
     "start": "probot run ./index.js",
-    "test": "jest"
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
+    "bnc-sdk": "^2.1.5",
+    "ignore": "^5.1.8",
+    "nodemon": "^2.0.4",
     "probot": "^10.1.0"
   },
   "devDependencies": {
     "jest": "^26.4.0",
     "nock": "^13.0.4",
-    "smee-client": "^1.1.0"
+    "smee-client": "^1.1.0",
+    "standard": "^14.3.4"
   },
   "engines": {
     "node": ">= 10.13.0"
