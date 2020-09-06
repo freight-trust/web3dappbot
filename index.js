@@ -1,4 +1,3 @@
-
 const labeler = require('./lib/labeler')
 const greetings = require('./lib/greetings')
 const issuelink = require('./lib/issuelink')
